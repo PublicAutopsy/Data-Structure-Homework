@@ -2,7 +2,7 @@
 //i dont know what your experience with JS is
 
 //Declaring List Class
-function LinkedList(){
+function CircularList(){
   this._length = 0;
   this._head = null;
 }
@@ -13,7 +13,7 @@ function Node( data, next ){
   this.next = next;
 }
 
-LinkedList.prototype = {
+CircularList.prototype = {
   push   : function( data ){
               var temp = new Node( data );
               temp.next = this._head;
@@ -88,7 +88,7 @@ LinkedList.prototype = {
 
 }
 
-var colors = new LinkedList();
+var colors = new CircularList();
 
 console.log("Push");
 colors.push("red");
